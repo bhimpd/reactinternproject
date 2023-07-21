@@ -6,7 +6,7 @@ import { add } from "../store/cartSlice";
 
 const ProductDetailsPage = () => {
   const dispatch = useDispatch();
-  const products = useSelector((state) => state.cart);
+  
   const { id } = useParams(); 
 
   const [product, setProduct] = useState(null);
