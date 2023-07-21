@@ -1,17 +1,24 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Product_Details_Page from "./pages/Product_Details_Page";
+import ProductDetailsPage from "./pages/ProductDetailsPage";
+import Cart from "./components/Cart";
 import MainNav from "./components/MainNav";
+import { Provider } from "react-redux";
+import store from "./store/Store";
 
 function App() {
   return (
     <>
-      <MainNav />
-      <Routes>
-        <Route exact="true" path="/" element={<Home />}></Route>
-        <Route path="/product" element={<Product_Details_Page />}></Route>
-      </Routes>
+      <Provider store={store}>
+        <MainNav />
+        <Routes>
+          <Route path="/" element={<Home />} exact />
+          <Route path="/product/:id" element={<ProductDetailsPage />} />
+          <Route path="/cart" element={<Cart />} />
+
+        </Routes>
+      </Provider>
     </>
   );
 }

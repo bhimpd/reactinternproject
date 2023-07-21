@@ -1,0 +1,29 @@
+.navbar{
+    background-color: #1582a7;
+   
+}
+.cartbackground{
+  background-color: rgb(193, 215, 235);
+}
+.navbar-brand {
+    color: white;
+  }
+
+  .link{
+    text-decoration: none;
+  }
+  .navlink{
+    color:white;
+    text-decoration: none;
+
+  }
+
+  .cartCard{
+    display:flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(245, 240, 240);
+    margin:10px;
+    padding:50px 10px;
+  }
