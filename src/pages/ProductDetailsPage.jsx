@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Card from "react-bootstrap/Card";
 import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom"; 
 import "./home.css";
 import { add } from "../store/cartSlice";
-import { useSelector } from "react-redux";
 
 const ProductDetailsPage = () => {
   const dispatch = useDispatch();
